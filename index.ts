@@ -16,6 +16,9 @@ export function toString(date: Date, format: Iformat) {
     case "YYYY-MM-DD HH:mm:ss": {
       return `${toYYYYMMDD(date)} ${toHHMMSS(date)}`;
     }
+    default: {
+      throw new Error(`未定义format:${format}`)
+    }
   }
 }
 
