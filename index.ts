@@ -5,8 +5,9 @@ type Iformat = "YYYY-MM-DD" | "YYYY-MM-DD HH:mm:ss" | "HH:mm:ss";
  * @param date 日期
  * @param format 格式化参数
  */
-export function toString(date: Date, format: Iformat) {
+export function dateFormat(date: Date, format?: Iformat) {
   switch (format) {
+    case undefined:
     case "YYYY-MM-DD": {
       return toYYYYMMDD(date);
     }
@@ -17,7 +18,7 @@ export function toString(date: Date, format: Iformat) {
       return `${toYYYYMMDD(date)} ${toHHMMSS(date)}`;
     }
     default: {
-      throw new Error(`未定义format:${format}`)
+      throw new Error(`未定义format:${format}`);
     }
   }
 }
