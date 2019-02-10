@@ -1,32 +1,32 @@
-# mssql-i
+# 源代码
 
-[![NPM version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][npm-url]
-[![Build Status](https://travis-ci.org/heifade/date-i.svg?branch=master)](https://travis-ci.org/heifade/date-i)
-
-# 源代码及文档
 [源代码](https://github.com/heifade/date-i)
 
 # 安装
+
 ```bash
 npm install date-i
 ```
 
 # 例子
-例子1
+
+例子 1
+
 ```js
-const { toString } = require('date-i');
+const { toString } = require("date-i");
 console.log(toString(new Date(), "YYYY-MM-DD HH:mm:ss"));
 ```
 
-例子2
+例子 2
+
 ```js
-const { toString } = require('date-i');
+const { toString } = require("date-i");
 console.log(toString(new Date(), "YYYY-MM-DD"));
 ```
 
-例子3
+例子 3
+
 ```js
-const { toString } = require('date-i');
+const { toString } = require("date-i");
 console.log(toString(new Date(), "HH:mm:ss"));
 ```

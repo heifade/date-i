@@ -1,6 +1,6 @@
 {
   "name": "date-i",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
   "files": [
@@ -9,7 +9,10 @@
   "scripts": {
     "build": "tsc"
   },
-  "keywords": [],
+  "keywords": [
+    "date",
+    "date format"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
