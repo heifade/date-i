@@ -6,6 +6,9 @@ type Iformat = "YYYY-MM-DD" | "YYYY-MM-DD HH:mm:ss" | "HH:mm:ss";
  * @param format 格式化参数
  */
 export function dateFormat(date: Date, format?: Iformat) {
+  if (date === undefined || date === null || !(date instanceof Date)) {
+    return undefined;
+  }
   switch (format) {
     case undefined:
     case "YYYY-MM-DD": {
